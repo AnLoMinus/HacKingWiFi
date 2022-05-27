@@ -2,7 +2,7 @@
 HacKingWiFi 
 
 
-## HacKing WiFi Algorithm Commands
+## Algorithm Commands to HacKing WiFi 
 
 - [1] Get Interface:
   - [1.1] Cheking for Wireless Network interface: `iwconfig`  
