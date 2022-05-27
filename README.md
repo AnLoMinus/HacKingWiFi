@@ -54,3 +54,6 @@ driver=nl80211
   - [5.3] Run Commands 1: `dnsmasq -C /directory_to_dnsmasq.conf`
   - [5.4] Run Commands 2: `hostapd /directory_to_hostapd.conf -B`
  
+ ---
+ 
+ - [WiFi Hacking using Evil Twin Attacks and Captive Portals](https://github.com/Anlominus/Studies/tree/main/Udemy/IT%20%26%20Software/Network%20%26%20Security/Security%20HacKing/WiFi%20Hacking%20using%20Evil%20Twin%20Attacks%20and%20Captive%20Portals)
