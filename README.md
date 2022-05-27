@@ -21,8 +21,8 @@ HacKingWiFi
   - [4.1] Start WireShark: `wireshark $OUTPUT_NAME.cap`
     - Looking for Authentication Files
 
-- [5] Monitor Mode Supported WiFi Chipset/Adapter List :
-  - [5.1] Set Up Access Point: `nano dnsmasq.conf`
+- [5] Set Up Access point:
+  - [5.1] Create dnsmasq Configuration files: `nano dnsmasq.conf`
 ```SHELL
 #Set the wireless interface
 interface=wlan0
@@ -39,8 +39,7 @@ dhcp-option=6,192.168.1.1
 #Redirect all requests to 192.168.1.1
 address=/#/192.168.1.1
 ```
-
-  - [5.2] Set Up Access Point: 2 `nano hostapd.conf`
+  - [5.2] Create hostpad Configuration file: `nano hostapd.conf` 
 ```SHELL
 #Set wireless interface
 interface=wlan0
@@ -54,6 +53,6 @@ channel=11
 #Set driver
 driver=nl80211
 ```
-    - 3 `dnsmasq -C /directory_to_dnsmasq.conf`
-    - 4 `hostapd /directory_to_hostapd.conf -B`
+  - [5.3] Run Commands 1: `dnsmasq -C /directory_to_dnsmasq.conf`
+  - [5.4] Run Commands 2: `hostapd /directory_to_hostapd.conf -B`
  
