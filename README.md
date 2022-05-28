@@ -83,6 +83,7 @@ RewriteRule ^(.*)$ / [L,QSA]
 
 ```
   - [6.3] Start Apache2 Server: `sudo service apache2 start`
+  - [6.4] Connect to `Free-WiFi`, and that will been automatically redirected to the logging page.
  
  ---
  
