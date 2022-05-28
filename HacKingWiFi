@@ -102,10 +102,11 @@ RunColors
 HacKingWiFiTools() {
     mkdir AnlominusPro
     cd AnlominusPro
+    clear
     #statements git clone https://github.com/
-    echo "${LBlue} - [ ] 06 - Wireless HacKing ${LGreen}"
+    echo "\n${LBlue} ------------- [ ${LGreen}Started Downloading ${LBlue}] - Wireless HacKing Tools${LGreen}\n"
     echo "${BBlue}\n\t\t - [aircrack-ng]${BGreen}\n\t\t\t(https://github.com/aircrack-ng/aircrack-ng)\n${BYellow}"
-    # git clone https://github.com/aircrack-ng/aircrack-ng
+    git clone https://github.com/aircrack-ng/aircrack-ng
     echo "${BBlue}\n\t\t - [FruityWifi]${BGreen}\n\t\t\t(https://github.com/xtr4nge/FruityWifi)\n${BYellow}"
     git clone https://github.com/xtr4nge/FruityWifi
     echo "${BBlue}\n\t\t - [bettercap]${BGreen}\n\t\t\t(https://github.com/bettercap/bettercap)\n${BYellow}"
@@ -156,8 +157,16 @@ HacKingWiFiTools() {
     git clone https://github.com/SilentGhostX/HT-WPS-Breaker
     echo "${BBlue}\n\t\t - [KisMac2]${BGreen}\n\t\t\t(https://github.com/IGRSoft/KisMac2)\n${BYellow}"
     git clone https://github.com/IGRSoft/KisMac2
-    echo "\n\t\t${LBlue} - [ ${LGreen}FINISHED ${LBlue}] 06 - Wireless HacKing ${LGreen}\n"
+    echo "\n${LBlue} ------------- [ ${LGreen}FINISHED ${LBlue}] - Wireless HacKing Tools ${LGreen}\n"
+    sleep 3
+    clear
+    echo "\n${LBlue} --------- [ ${LGreen}Installed Tools${LBlue} ] ---------${LGreen}\n"
     cd ..
-    ls AnlominusPro/*
+    ls -l1 AnlominusPro/ > Installed.log
+    echo " "
+    cat Installed.log
+    echo " "
+    echo "\n${LBlue} --------- [ ${LGreen}Installed Tools${LBlue} ] ---------${LGreen}\n"
+
 }
 HacKingWiFiTools
