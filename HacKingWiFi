@@ -25,7 +25,7 @@ if [ -e /data/data/com.termux/files/usr/bin/pkg ]; then
 elif [ `command -v brew` ]; then
   pac="brew"
   system="mac"
-  sudo=""
+   sudo=""
 elif [ `command -v apt` ]; then
   pac="apt"
   system="linux"
@@ -101,13 +101,13 @@ RunColors
 
   while true; do
     clear
-    echo "\n\t\t[#] Choosing Network InterFace Card\n"
+    echo "\n\t\t${BBlue}[#] Choosing Network InterFace Card\n"
     # get tool alias name
     # networks_data="Network-Interfaces.temp"
     # networks_name=`grep '.' $networks_data | sort -f | sed -n "$1p" | cut -d"|" -f1`
     # get all tools data
-    echo " ${red} ___
-//___// ${yellow}All Network Interfaces
+    echo " ${BRed} ___
+//___// ${BYellow}All Network Interfaces
 "
     for netcard in `ifconfig | grep mtu | awk '{print $1}' | tr {{:}} {{ }}`; do
       # display tools name from data
@@ -115,7 +115,7 @@ RunColors
         echo " ${BGreen} $interface"
       done
     done
-    echo " ${green} 0 Back"
+    echo " ${BGreen} 0 Back"
     echo "$prompt"
     read cmd
     # count total number of tools
@@ -127,15 +127,15 @@ RunColors
           # install tools
           install ${cmd}
         else
-          echo "${red}${cmd}: ${purple}invalid option!!"
+          echo "${BRed}${cmd}: ${purple}invalid option!!"
           sleep 1
         fi
       ;;
-      0|back|Back)
-        break
+      x)
+        exit
       ;;
       *)
-        echo "${red}${cmd}: ${purple}invalid option!!"
+        echo "${BRed}${cmd}: ${purple}invalid option!!"
         sleep 1
       ;;
     esac
