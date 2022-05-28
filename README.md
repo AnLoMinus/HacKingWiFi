@@ -82,7 +82,7 @@ RewriteRule ^(.*)$ / [L,QSA]
 </Directory>
 
 ```
-  - [6.3] 
+  - [6.3] Start Apache2 Server: `sudo service apache2 start`
  
  ---
  
