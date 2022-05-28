@@ -53,6 +53,8 @@ driver=nl80211
 ```
   - [5.3] Run Commands 1: `dnsmasq -C /directory_to_dnsmasq.conf`
   - [5.4] Run Commands 2: `hostapd /directory_to_hostapd.conf -B`
+  - [5.5] `airbase-ng -e $WIRELESS_NETWORK -c $CHANNEL $INTERFACE` 
+  - 
  
  ---
  
