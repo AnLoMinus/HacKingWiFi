@@ -67,7 +67,7 @@ driver=nl80211
 
 # [6] Setting up Captive Portal
   - [6.1] Download and Move Portal files to `/var/www/html`
-  - [6.2] Add to end of file: `nano /etc/apache2/sites-enabled/000-default.conf`
+  - [6.2] Edit `nano /etc/apache2/sites-enabled/000-default.conf` & Add to end of it:
 ```shell
 
 <Directory "/var/www/html">
