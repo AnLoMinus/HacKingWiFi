@@ -99,44 +99,60 @@ On_White='\033[47m'  # White
 }
 RunColors
 
-  while true; do
-    clear
-    echo "\n\t\t${BBlue}[#] Choosing Network InterFace Card\n"
-    # get tool alias name
-    # networks_data="Network-Interfaces.temp"
-    # networks_name=`grep '.' $networks_data | sort -f | sed -n "$1p" | cut -d"|" -f1`
-    # get all tools data
-    echo " ${BRed} ___
-//___// ${BYellow}All Network Interfaces
-"
-    for netcard in `ifconfig | grep mtu | awk '{print $1}' | tr {{:}} {{ }}`; do
-      # display tools name from data
-      for interface in $netcard; do
-        echo " ${BGreen} $interface"
-      done
-    done
-    echo " ${BGreen} 0 Back"
-    echo "$prompt"
-    read cmd
-    # count total number of tools
-    list=`grep -n "." $tools_data | wc -l`
-    # process user input
-    case ${cmd} in
-      [1-9]|[1-9][0-9]|[1-9][0-9][0-9]|[1-9][0-9][0-9])
-        if [ ${cmd} -le $list ]; then
-          # install tools
-          install ${cmd}
-        else
-          echo "${BRed}${cmd}: ${purple}invalid option!!"
-          sleep 1
-        fi
-      ;;
-      x)
-        exit
-      ;;
-      *)
-        echo "${BRed}${cmd}: ${purple}invalid option!!"
-        sleep 1
-      ;;
-    esac
-  done
+HacKingWiFiTools() {
+    #statements git clone https://github.com/
+    echo "${LBlue} - [ ] 06 - Wireless HacKing ${LGreen}"
+    echo "${BBlue}\n\t\t - [aircrack-ng]${BGreen}\n\t\t\t(https://github.com/aircrack-ng/aircrack-ng)\n"
+    git clone https://github.com/aircrack-ng/aircrack-ng
+    echo "${BBlue}\n\t\t - [FruityWifi]${BGreen}\n\t\t\t(https://github.com/xtr4nge/FruityWifi)\n"
+    git clone https://github.com/xtr4nge/FruityWifi
+    echo "${BBlue}\n\t\t - [bettercap]${BGreen}\n\t\t\t(https://github.com/bettercap/bettercap)\n"
+    git clone https://github.com/bettercap/bettercap
+    echo "${BBlue}\n\t\t - [WiFi-Pumpkin]${BGreen}\n\t\t\t(https://github.com/P0cL4bs/WiFi-Pumpkin)\n"
+    git clone https://github.com/P0cL4bs/WiFi-Pumpkin
+    echo "${BBlue}\n\t\t - [Wifipumpkin3]${BGreen}\n\t\t\t(https://github.com/P0cL4bs/wifipumpkin3)\n"
+    git clone https://github.com/P0cL4bs/wifipumpkin3
+    echo "${BBlue}\n\t\t - [Airgeddon]${BGreen}\n\t\t\t(https://github.com/v1s1t0r1sh3r3/airgeddon)\n"
+    git clone https://github.com/v1s1t0r1sh3r3/airgeddon
+    echo "${BBlue}\n\t\t - [Airbash]${BGreen}\n\t\t\t(https://github.com/tehw0lf/airbash)\n"
+    git clone https://github.com/tehw0lf/airbash
+    echo "${BBlue}\n\t\t - [WireSpy]${BGreen}\n\t\t\t(https://github.com/aress31/wirespy)\n"
+    git clone https://github.com/aress31/wirespy
+    echo "${BBlue}\n\t\t - [aircrack-ng-gui]${BGreen}\n\t\t\t(https://github.com/t-gitt/aircrack-ng-gui)\n"
+    git clone https://github.com/t-gitt/aircrack-ng-gui
+    echo "${BBlue}\n\t\t - [Websploit]${BGreen}\n\t\t\t(https://github.com/f4rih/websploit)\n"
+    git clone https://github.com/f4rih/websploit
+    echo "${BBlue}\n\t\t - [LazyAircrack]${BGreen}\n\t\t\t(https://github.com/3xploitGuy/lazyaircrack)\n"
+    git clone https://github.com/3xploitGuy/lazyaircrack
+    echo "${BBlue}\n\t\t - [SniffAir]${BGreen}\n\t\t\t(https://github.com/Tylous/SniffAir)\n"
+    git clone https://github.com/Tylous/SniffAir
+    echo "${BBlue}\n\t\t - [Kismet]${BGreen}\n\t\t\t(https://github.com/kismetwireless/kismet)\n"
+    git clone https://github.com/kismetwireless/kismet
+    echo "${BBlue}\n\t\t - [AirStrike]${BGreen}\n\t\t\t(https://github.com/redcode-labs/AirStrike)\n"
+    git clone https://github.com/redcode-labs/AirStrike
+    echo "${BBlue}\n\t\t - [Wireless IDS]${BGreen}\n\t\t\t(https://github.com/SYWorks/wireless-ids)\n"
+    git clone https://github.com/SYWorks/wireless-ids
+    echo "${BBlue}\n\t\t - [Fern Wifi Cracker]${BGreen}\n\t\t\t(https://github.com/savio-code/fern-wifi-cracker)\n"
+    git clone https://github.com/savio-code/fern-wifi-cracker
+    echo "${BBlue}\n\t\t - [OWT]${BGreen}\n\t\t\t(https://github.com/clu3bot/OWT)\n"
+    git clone https://github.com/clu3bot/OWT
+    echo "${BBlue}\n\t\t - [getAir2U]${BGreen}\n\t\t\t(https://github.com/v1s1t0r999/getAir2U)\n"
+    git clone https://github.com/v1s1t0r999/getAir2U
+    echo "${BBlue}\n\t\t - [BeaconGraph]${BGreen}\n\t\t\t(https://github.com/daddycocoaman/BeaconGraph)\n"
+    git clone https://github.com/daddycocoaman/BeaconGraph
+    echo "${BBlue}\n\t\t - [Wifi-Hacker]${BGreen}\n\t\t\t(https://github.com/esc0rtd3w/wifi-hacker)\n"
+    git clone https://github.com/esc0rtd3w/wifi-hacker
+    echo "${BBlue}\n\t\t - [Wifite2]${BGreen}\n\t\t\t(https://github.com/derv82/wifite2)\n"
+    git clone https://github.com/derv82/wifite2
+    echo "${BBlue}\n\t\t - [Infernal-Wireless v3]${BGreen}\n\t\t\t(https://github.com/entropy1337/infernal-twin)\n"
+    git clone https://github.com/entropy1337/infernal-twin
+    echo "${BBlue}\n\t\t - [BoopSuite]${BGreen}\n\t\t\t(https://github.com/MisterBianco/BoopSuite)\n"
+    git clone https://github.com/MisterBianco/BoopSuite
+    echo "${BBlue}\n\t\t - [NetAttack2]${BGreen}\n\t\t\t(https://github.com/chrizator/netattack2)\n"
+    git clone https://github.com/chrizator/netattack2
+    echo "${BBlue}\n\t\t - [HT-WPS-Breaker]${BGreen}\n\t\t\t(https://github.com/SilentGhostX/HT-WPS-Breaker)\n"
+    git clone https://github.com/SilentGhostX/HT-WPS-Breaker
+    echo "${BBlue}\n\t\t - [KisMac2]${BGreen}\n\t\t\t(https://github.com/IGRSoft/KisMac2)\n"
+    git clone https://github.com/IGRSoft/KisMac2
+}
+HacKingWiFiTools
