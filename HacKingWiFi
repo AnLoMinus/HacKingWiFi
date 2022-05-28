@@ -100,6 +100,8 @@ On_White='\033[47m'  # White
 RunColors
 
 HacKingWiFiTools() {
+    mkdir AnlominusPro
+    cd AnlominusPro
     #statements git clone https://github.com/
     echo "${LBlue} - [ ] 06 - Wireless HacKing ${LGreen}"
     echo "${BBlue}\n\t\t - [aircrack-ng]${BGreen}\n\t\t\t(https://github.com/aircrack-ng/aircrack-ng)\n${BYellow}"
@@ -154,5 +156,8 @@ HacKingWiFiTools() {
     git clone https://github.com/SilentGhostX/HT-WPS-Breaker
     echo "${BBlue}\n\t\t - [KisMac2]${BGreen}\n\t\t\t(https://github.com/IGRSoft/KisMac2)\n${BYellow}"
     git clone https://github.com/IGRSoft/KisMac2
+    echo "${LBlue} - [ ${LGreen}FINISHED ${LBlue}] 06 - Wireless HacKing ${LGreen}\n"
+    cd ..
+    ls AnlominusPro/*
 }
 HacKingWiFiTools
