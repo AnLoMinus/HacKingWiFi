@@ -4,7 +4,7 @@
 #!/usr/bin/env bash
 #!/data/data/com.termux/files/usr/bin/bash
 ###############################################
-# Name : Anlominus ~ Diablo
+# Name : Anlominus ~ HacKingWiFi
 # Description : HacKingWiFi ~ Get your target and Hack It.
 # Date : 2022 May
 Anlominus="Anlominus"
@@ -99,101 +99,186 @@ On_White='\033[47m'  # White
 }
 RunColors
 
-HacKingWiFiTools() {
-    mkdir AnlominusPro
-    cd AnlominusPro
-    clear
-    #statements git clone https://github.com/
-    echo "\n${LBlue} ------------- [ ${LGreen}Started Downloading ${LBlue}] - Wireless HacKing Tools${LGreen}\n"
-    sleep 1
-    echo "${BBlue}\n\t\t - [aircrack-ng]${BGreen}\n\t\t\t(https://github.com/aircrack-ng/aircrack-ng)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/aircrack-ng/aircrack-ng
-    echo "${BBlue}\n\t\t - [FruityWifi]${BGreen}\n\t\t\t(https://github.com/xtr4nge/FruityWifi)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/xtr4nge/FruityWifi
-    echo "${BBlue}\n\t\t - [bettercap]${BGreen}\n\t\t\t(https://github.com/bettercap/bettercap)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/bettercap/bettercap
-    echo "${BBlue}\n\t\t - [WiFi-Pumpkin]${BGreen}\n\t\t\t(https://github.com/P0cL4bs/WiFi-Pumpkin)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/P0cL4bs/WiFi-Pumpkin
-    echo "${BBlue}\n\t\t - [Wifipumpkin3]${BGreen}\n\t\t\t(https://github.com/P0cL4bs/wifipumpkin3)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/P0cL4bs/wifipumpkin3
-    echo "${BBlue}\n\t\t - [Airgeddon]${BGreen}\n\t\t\t(https://github.com/v1s1t0r1sh3r3/airgeddon)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/v1s1t0r1sh3r3/airgeddon
-    echo "${BBlue}\n\t\t - [Airbash]${BGreen}\n\t\t\t(https://github.com/tehw0lf/airbash)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/tehw0lf/airbash
-    echo "${BBlue}\n\t\t - [WireSpy]${BGreen}\n\t\t\t(https://github.com/aress31/wirespy)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/aress31/wirespy
-    echo "${BBlue}\n\t\t - [aircrack-ng-gui]${BGreen}\n\t\t\t(https://github.com/t-gitt/aircrack-ng-gui)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/t-gitt/aircrack-ng-gui
-    echo "${BBlue}\n\t\t - [Websploit]${BGreen}\n\t\t\t(https://github.com/f4rih/websploit)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/f4rih/websploit
-    echo "${BBlue}\n\t\t - [LazyAircrack]${BGreen}\n\t\t\t(https://github.com/3xploitGuy/lazyaircrack)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/3xploitGuy/lazyaircrack
-    echo "${BBlue}\n\t\t - [SniffAir]${BGreen}\n\t\t\t(https://github.com/Tylous/SniffAir)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/Tylous/SniffAir
-    echo "${BBlue}\n\t\t - [Kismet]${BGreen}\n\t\t\t(https://github.com/kismetwireless/kismet)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/kismetwireless/kismet
-    echo "${BBlue}\n\t\t - [AirStrike]${BGreen}\n\t\t\t(https://github.com/redcode-labs/AirStrike)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/redcode-labs/AirStrike
-    echo "${BBlue}\n\t\t - [Wireless IDS]${BGreen}\n\t\t\t(https://github.com/SYWorks/wireless-ids)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/SYWorks/wireless-ids
-    echo "${BBlue}\n\t\t - [Fern Wifi Cracker]${BGreen}\n\t\t\t(https://github.com/savio-code/fern-wifi-cracker)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/savio-code/fern-wifi-cracker
-    echo "${BBlue}\n\t\t - [OWT]${BGreen}\n\t\t\t(https://github.com/clu3bot/OWT)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/clu3bot/OWT
-    echo "${BBlue}\n\t\t - [getAir2U]${BGreen}\n\t\t\t(https://github.com/v1s1t0r999/getAir2U)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/v1s1t0r999/getAir2U
-    echo "${BBlue}\n\t\t - [BeaconGraph]${BGreen}\n\t\t\t(https://github.com/daddycocoaman/BeaconGraph)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/daddycocoaman/BeaconGraph
-    echo "${BBlue}\n\t\t - [Wifi-Hacker]${BGreen}\n\t\t\t(https://github.com/esc0rtd3w/wifi-hacker)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/esc0rtd3w/wifi-hacker
-    echo "${BBlue}\n\t\t - [Wifite2]${BGreen}\n\t\t\t(https://github.com/derv82/wifite2)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/derv82/wifite2
-    echo "${BBlue}\n\t\t - [Infernal-Wireless v3]${BGreen}\n\t\t\t(https://github.com/entropy1337/infernal-twin)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/entropy1337/infernal-twin
-    echo "${BBlue}\n\t\t - [BoopSuite]${BGreen}\n\t\t\t(https://github.com/MisterBianco/BoopSuite)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/MisterBianco/BoopSuite
-    echo "${BBlue}\n\t\t - [NetAttack2]${BGreen}\n\t\t\t(https://github.com/chrizator/netattack2)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/chrizator/netattack2
-    echo "${BBlue}\n\t\t - [HT-WPS-Breaker]${BGreen}\n\t\t\t(https://github.com/SilentGhostX/HT-WPS-Breaker)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/SilentGhostX/HT-WPS-Breaker
-    echo "${BBlue}\n\t\t - [KisMac2]${BGreen}\n\t\t\t(https://github.com/IGRSoft/KisMac2)\n${BYellow}"
-    sleep 1
-    git clone https://github.com/IGRSoft/KisMac2
-    echo "\n${LBlue} ------------- [ ${LGreen}FINISHED ${LBlue}] - Wireless HacKing Tools ${LGreen}\n"
-    sleep 3
-    clear
-    echo "\n${LBlue} --------- [ ${LGreen}Installed Tools${LBlue} ] ---------${LGreen}\n"
-    cd ..
-    ls -l1 AnlominusPro/ > Installed.log
-    echo " "
-    cat Installed.log
-    echo " "
-    echo "\n${LBlue} --------- [ ${LGreen}Installed Tools${LBlue} ] ---------${LGreen}\n"
+MainMenu(){
+  while true; do
+  #statements
+  clear
+  # HacKingWiFiLogo1
+  HacKingWiFiMenuMain=$(echo "${BRed}
+          ${BBlue}[${BRed}#${BBlue}] 📜 Menu
 
+          ${BBlue}[${BRed}#${BBlue}] 📜 Target IP: ${BRed}${targetIP}
+          ${BBlue}[${BRed}#${BBlue}] 📜 Target Name: ${BRed}${targetNAME}
+
+          ${BRed}[${LGrey}A${BRed}]${BBlue} -${DGrey} DownLoad WiFi HacKing Tools
+
+          ${BRed}[${LGrey}1${BRed}]${BBlue} -${DGrey} Planning and Scoping
+          ${BRed}[${LGrey}2${BRed}]${BBlue} -${DGrey} Reconnaissance & Vulnerability Assessment
+          ${BRed}[${LGrey}3${BRed}]${BBlue} -${DGrey} Gaining Access & Maintaining Access
+          ${BRed}[${LGrey}4${BRed}]${BBlue} -${DGrey} Covering tracks
+          ${BRed}[${LGrey}5${BRed}]${BBlue} -${DGrey} Analysis & Reporting
+
+          ${BRed}[${LGrey}x${BRed}]${BWhite} -${DGrey} Exit / Quit / Close
+
+
+${BCyan}            ┌──${BBlue}[${BBlue} Anlominus 👽${BRed} HacKingWiFi ${BCyan}$~${BBlue}]
+${BCyan}            └──╼ ")
+    read -p "$HacKingWiFiMenuMain" cmd
+    case $cmd in
+      a|A )
+      HacKingWiFiTools() {
+          mkdir AnlominusPro
+          cd AnlominusPro
+          clear
+          #statements git clone https://github.com/
+          echo "\n${LBlue} ------------- [ ${LGreen}Started Downloading ${LBlue}] - Wireless HacKing Tools${LGreen}\n"
+          sleep 1
+          echo "${BBlue}\n\t\t - [aircrack-ng]${BGreen}\n\t\t\t(https://github.com/aircrack-ng/aircrack-ng)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/aircrack-ng/aircrack-ng
+          echo "${BBlue}\n\t\t - [FruityWifi]${BGreen}\n\t\t\t(https://github.com/xtr4nge/FruityWifi)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/xtr4nge/FruityWifi
+          echo "${BBlue}\n\t\t - [bettercap]${BGreen}\n\t\t\t(https://github.com/bettercap/bettercap)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/bettercap/bettercap
+          echo "${BBlue}\n\t\t - [WiFi-Pumpkin]${BGreen}\n\t\t\t(https://github.com/P0cL4bs/WiFi-Pumpkin)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/P0cL4bs/WiFi-Pumpkin
+          echo "${BBlue}\n\t\t - [Wifipumpkin3]${BGreen}\n\t\t\t(https://github.com/P0cL4bs/wifipumpkin3)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/P0cL4bs/wifipumpkin3
+          echo "${BBlue}\n\t\t - [Airgeddon]${BGreen}\n\t\t\t(https://github.com/v1s1t0r1sh3r3/airgeddon)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/v1s1t0r1sh3r3/airgeddon
+          echo "${BBlue}\n\t\t - [Airbash]${BGreen}\n\t\t\t(https://github.com/tehw0lf/airbash)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/tehw0lf/airbash
+          echo "${BBlue}\n\t\t - [WireSpy]${BGreen}\n\t\t\t(https://github.com/aress31/wirespy)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/aress31/wirespy
+          echo "${BBlue}\n\t\t - [aircrack-ng-gui]${BGreen}\n\t\t\t(https://github.com/t-gitt/aircrack-ng-gui)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/t-gitt/aircrack-ng-gui
+          echo "${BBlue}\n\t\t - [Websploit]${BGreen}\n\t\t\t(https://github.com/f4rih/websploit)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/f4rih/websploit
+          echo "${BBlue}\n\t\t - [LazyAircrack]${BGreen}\n\t\t\t(https://github.com/3xploitGuy/lazyaircrack)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/3xploitGuy/lazyaircrack
+          echo "${BBlue}\n\t\t - [SniffAir]${BGreen}\n\t\t\t(https://github.com/Tylous/SniffAir)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/Tylous/SniffAir
+          echo "${BBlue}\n\t\t - [Kismet]${BGreen}\n\t\t\t(https://github.com/kismetwireless/kismet)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/kismetwireless/kismet
+          echo "${BBlue}\n\t\t - [AirStrike]${BGreen}\n\t\t\t(https://github.com/redcode-labs/AirStrike)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/redcode-labs/AirStrike
+          echo "${BBlue}\n\t\t - [Wireless IDS]${BGreen}\n\t\t\t(https://github.com/SYWorks/wireless-ids)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/SYWorks/wireless-ids
+          echo "${BBlue}\n\t\t - [Fern Wifi Cracker]${BGreen}\n\t\t\t(https://github.com/savio-code/fern-wifi-cracker)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/savio-code/fern-wifi-cracker
+          echo "${BBlue}\n\t\t - [OWT]${BGreen}\n\t\t\t(https://github.com/clu3bot/OWT)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/clu3bot/OWT
+          echo "${BBlue}\n\t\t - [getAir2U]${BGreen}\n\t\t\t(https://github.com/v1s1t0r999/getAir2U)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/v1s1t0r999/getAir2U
+          echo "${BBlue}\n\t\t - [BeaconGraph]${BGreen}\n\t\t\t(https://github.com/daddycocoaman/BeaconGraph)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/daddycocoaman/BeaconGraph
+          echo "${BBlue}\n\t\t - [Wifi-Hacker]${BGreen}\n\t\t\t(https://github.com/esc0rtd3w/wifi-hacker)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/esc0rtd3w/wifi-hacker
+          echo "${BBlue}\n\t\t - [Wifite2]${BGreen}\n\t\t\t(https://github.com/derv82/wifite2)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/derv82/wifite2
+          echo "${BBlue}\n\t\t - [Infernal-Wireless v3]${BGreen}\n\t\t\t(https://github.com/entropy1337/infernal-twin)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/entropy1337/infernal-twin
+          echo "${BBlue}\n\t\t - [BoopSuite]${BGreen}\n\t\t\t(https://github.com/MisterBianco/BoopSuite)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/MisterBianco/BoopSuite
+          echo "${BBlue}\n\t\t - [NetAttack2]${BGreen}\n\t\t\t(https://github.com/chrizator/netattack2)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/chrizator/netattack2
+          echo "${BBlue}\n\t\t - [HT-WPS-Breaker]${BGreen}\n\t\t\t(https://github.com/SilentGhostX/HT-WPS-Breaker)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/SilentGhostX/HT-WPS-Breaker
+          echo "${BBlue}\n\t\t - [KisMac2]${BGreen}\n\t\t\t(https://github.com/IGRSoft/KisMac2)\n${BYellow}"
+          sleep 1
+          git clone https://github.com/IGRSoft/KisMac2
+          echo "\n${LBlue} ------------- [ ${LGreen}FINISHED ${LBlue}] - Wireless HacKing Tools ${LGreen}\n"
+          sleep 3
+          clear
+          echo "\n${LBlue} --------- [ ${LGreen}Installed Tools${LBlue} ] ---------${LGreen}\n"
+          cd ..
+          ls -l1 AnlominusPro/ > Installed.log
+          echo " "
+          cat Installed.log
+          echo " "
+          echo "\n${LBlue} --------- [ ${LGreen}Installed Tools${LBlue} ] ---------${LGreen}\n"
+
+      }
+      HacKingWiFiTools
+
+      ;;
+      1 )
+      echo "\n\t\t${BRed}[${BBlue}1${BRed}]${BWhite} - ${BRed}DownLoad WiFi HacKing Tools"
+      #
+      t1="$(echo "\n\t\t${BBlue}[${BRed}?${BBlue}]${BGreen} - IP / Host of Target / Client: ${BRed}")"
+      read -p "$t1" targetIP
+      if [ -z $targetIP ]; then
+        #statements
+        targetIP="127.0.0.1"
+      fi
+      #
+      t2="$(echo "\n\t\t${BBlue}[${BRed}?${BBlue}]${BGreen} - Name of Target / Client: ${BRed}")"
+      read -p "$t2" targetNAME
+      if [ -z $targetNAME ]; then
+        #statements
+        targetNAME="ChangeMe"
+        echo "\n\t\t${BRed}Target Name: ${BBlue} $targetNAME"
+      fi
+      #
+      file="${targetNAME}-HacKingWiFi-Log.md"
+      if [ -e ${file} ]; then
+        t2="$(echo "\n  ${BBlue}[${BRed}!${BBlue}] File Exist! Remove it? [yY/nN]: ")"
+        read -p "$t2 " filexist
+        case $filexist in
+          y|Y)
+          echo "  ${BBlue}[${BRed}!${BBlue}] Removing {${targetNAME}-HacKingWiFi-Log.md} file .."
+          rm ${targetNAME}-HacKingWiFi-Log.md
+          clear
+          exit
+          ;;
+          n|N)
+          echo "  ${BBlue}[${BRed}!${BBlue}] Leaving {${targetNAME}-HacKingWiFi-Log.md} file and Add to it .."
+          ;;
+        esac
+      fi
+      ;;
+      2 )
+      clear
+      echo "\n\t\t${BRed}[${BBlue}2${BRed}]${BWhite} -${BRed} Reconnaissance & Vulnerability Assessment"
+      ;;
+      3 )
+      echo "\n\t\t${BRed}[${BBlue}3${BRed}]${BWhite} -${BRed} Gaining Access & Maintaining Access"
+      ;;
+      4 )
+      echo "\n\t\t${BRed}[${BBlue}4${BRed}]${BWhite} -${BRed} Covering tracks"
+      ;;
+      5 )
+      echo "\n\t\t${BRed}[${BBlue}5${BRed}]${BWhite} -${BRed} Analysis & Reporting"
+      ;;
+      x )
+      clear
+      exit
+      ;;
+    esac
+  done
 }
-HacKingWiFiTools
+MainMenu
