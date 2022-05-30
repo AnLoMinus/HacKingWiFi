@@ -105,18 +105,33 @@ MainMenu(){
   clear
   # HacKingWiFiLogo1
   HacKingWiFiMenuMain=$(echo "${BRed}
+  \n${BBlue}- ${BRed}[${LGrey}---------------------------------------------------------------------------${BRed}]${BBlue} - \n
           ${BBlue}[${BRed}#${BBlue}] 📜 Menu
 
           ${BBlue}[${BRed}#${BBlue}] 📜 Target IP: ${BRed}${targetIP}
           ${BBlue}[${BRed}#${BBlue}] 📜 Target Name: ${BRed}${targetNAME}
-
+          \n${BBlue}- ${BRed}[${LGrey}---------------------------------------------------------------------------${BRed}]${BBlue} - \n
           ${BRed}[${LGrey}A${BRed}]${BBlue} -${DGrey} DownLoad WiFi HacKing Tools
-
-          ${BRed}[${LGrey}1${BRed}]${BBlue} -${DGrey} Planning and Scoping
-          ${BRed}[${LGrey}2${BRed}]${BBlue} -${DGrey} Reconnaissance & Vulnerability Assessment
-          ${BRed}[${LGrey}3${BRed}]${BBlue} -${DGrey} Gaining Access & Maintaining Access
-          ${BRed}[${LGrey}4${BRed}]${BBlue} -${DGrey} Covering tracks
+          \n${BBlue}- ${BRed}[${LGrey}---------------------------------------------------------------------------${BRed}]${BBlue} - \n
+          ${BRed}[${LGrey}1${BRed}]${BBlue} -${DGrey} Choosing Wireless Adapter / Get Interface:
+          ${BRed}[${LGrey}1.2${BRed}]${BBlue} -${DGrey}  Cheking for Wireless Network interface: iwconfig
+          ${BRed}[${LGrey}1.3${BRed}]${BBlue} -${DGrey}  Cheking for Wireless Network interface: ifconfig
+          \n${BBlue}- ${BRed}[${LGrey}---------------------------------------------------------------------------${BRed}]${BBlue} - \n
+          ${BRed}[${LGrey}2${BRed}]${BBlue} -${DGrey} Start Monitoring Mode & Checking Injection Option
+          ${BRed}[${LGrey}2.1${BRed}]${BBlue} -${DGrey} Starting Monitor mode: airmon-ng start $INTERFACE
+          ${BRed}[${LGrey}2.2${BRed}]${BBlue} -${DGrey} Monitoring: aireplay-ng --test $INTERFACE
+          \n${BBlue}- ${BRed}[${LGrey}---------------------------------------------------------------------------${BRed}]${BBlue} - \n
+          ${BRed}[${LGrey}3${BRed}]${BBlue} -${DGrey} Scan Wireless’s Area
+          ${BRed}[${LGrey}3.1${BRed}]${BBlue} -${DGrey} Sniff Networks Area Information : airodump-ng $INTERFACE
+          ${BRed}[${LGrey}3.2${BRed}]${BBlue} -${DGrey} Start Capturing Packets: airodump-ng --bssid $BSSID -c $CHANNEL_NUMBER -w $OUTPUT_NAME $INTERFACE
+          ${BRed}[${LGrey}3.3${BRed}]${BBlue} -${DGrey} Inject Packets into Wireless Network: aireplay-ng --deauth 10 -a $MAC_TARGET $INTERFACE
+          \n${BBlue}- ${BRed}[${LGrey}---------------------------------------------------------------------------${BRed}]${BBlue} - \n
+          ${BRed}[${LGrey}4${BRed}]${BBlue} -${DGrey} Analysis Captured Files With WireShark:
+          ${BRed}[${LGrey}4.1${BRed}]${BBlue} -${DGrey} Start WireShark: wireshark $OUTPUT_NAME.cap
+          \t${BRed}[${LGrey}-${BRed}]${BBlue} -${DGrey} Looking for Authentication Files
+          \n${BBlue}- ${BRed}[${LGrey}---------------------------------------------------------------------------${BRed}]${BBlue} - \n
           ${BRed}[${LGrey}5${BRed}]${BBlue} -${DGrey} Analysis & Reporting
+          \n${BBlue}- ${BRed}[${LGrey}---------------------------------------------------------------------------${BRed}]${BBlue} - \n
 
           ${BRed}[${LGrey}x${BRed}]${BWhite} -${DGrey} Exit / Quit / Close
 
@@ -226,7 +241,7 @@ ${BCyan}            └──╼ ")
       HacKingWiFiTools
 
       ;;
-      1 )
+      1.1 )
       echo "\n\t\t${BRed}[${BBlue}1${BRed}]${BWhite} - ${BRed}DownLoad WiFi HacKing Tools"
       #
       t1="$(echo "\n\t\t${BBlue}[${BRed}?${BBlue}]${BGreen} - IP / Host of Target / Client: ${BRed}")"
