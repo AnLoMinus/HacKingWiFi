@@ -114,8 +114,6 @@ MainMenu(){
           ${BRed}[${LGrey}A${BRed}]${BBlue} -${DGrey} DownLoad WiFi HacKing Tools
           \n${BBlue}- ${BRed}[${LGrey}---------------------------------------------------------------------------${BRed}]${BBlue} - \n
           ${BRed}[${LGrey}1${BRed}]${BBlue} -${DGrey} Choosing Wireless Adapter / Get Interface:
-          ${BRed}[${LGrey}1.2${BRed}]${BBlue} -${DGrey}  Cheking for Wireless Network interface: iwconfig
-          ${BRed}[${LGrey}1.3${BRed}]${BBlue} -${DGrey}  Cheking for Wireless Network interface: ifconfig
           \n${BBlue}- ${BRed}[${LGrey}---------------------------------------------------------------------------${BRed}]${BBlue} - \n
           ${BRed}[${LGrey}2${BRed}]${BBlue} -${DGrey} Start Monitoring Mode & Checking Injection Option
           ${BRed}[${LGrey}2.1${BRed}]${BBlue} -${DGrey} Starting Monitor mode: airmon-ng start $INTERFACE
@@ -241,9 +239,30 @@ ${BCyan}            └──╼ ")
       HacKingWiFiTools
 
       ;;
-      1.1 )
+      1 )
+      while true; do
+      #statements
       clear
-      echo "\n\t\t${BRed}[${BBlue}1${BRed}]${BWhite} - ${BRed}DownLoad WiFi HacKing Tools"
+      HacKingWiFiMenu1=$(echo "
+      \n\t\t${BRed}[${LGrey}1${BRed}]${BBlue} -${DGrey} Choosing Wireless Adapter / Get Interface:
+      \n\t\t${BRed}[${LGrey}1.1${BRed}]${BBlue} -${DGrey}  Cheking for Wireless Network interface: iwconfig
+      \n\t\t${BRed}[${LGrey}1.2${BRed}]${BBlue} -${DGrey}  Cheking for Wireless Network interface: ifconfig
+      ")
+      read -p "$HacKingWiFiMenu1" cmd
+      case $cmd in
+        1.1 )
+        iwconfig
+        read 123
+        ;;
+        x )
+        clear
+        exit
+        ;;
+
+
+      esac
+    done
+
       ;;
       2 )
       clear
