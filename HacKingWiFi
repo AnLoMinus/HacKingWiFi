@@ -242,51 +242,23 @@ ${BCyan}            └──╼ ")
 
       ;;
       1.1 )
+      clear
       echo "\n\t\t${BRed}[${BBlue}1${BRed}]${BWhite} - ${BRed}DownLoad WiFi HacKing Tools"
-      #
-      t1="$(echo "\n\t\t${BBlue}[${BRed}?${BBlue}]${BGreen} - IP / Host of Target / Client: ${BRed}")"
-      read -p "$t1" targetIP
-      if [ -z $targetIP ]; then
-        #statements
-        targetIP="127.0.0.1"
-      fi
-      #
-      t2="$(echo "\n\t\t${BBlue}[${BRed}?${BBlue}]${BGreen} - Name of Target / Client: ${BRed}")"
-      read -p "$t2" targetNAME
-      if [ -z $targetNAME ]; then
-        #statements
-        targetNAME="ChangeMe"
-        echo "\n\t\t${BRed}Target Name: ${BBlue} $targetNAME"
-      fi
-      #
-      file="${targetNAME}-HacKingWiFi-Log.md"
-      if [ -e ${file} ]; then
-        t2="$(echo "\n  ${BBlue}[${BRed}!${BBlue}] File Exist! Remove it? [yY/nN]: ")"
-        read -p "$t2 " filexist
-        case $filexist in
-          y|Y)
-          echo "  ${BBlue}[${BRed}!${BBlue}] Removing {${targetNAME}-HacKingWiFi-Log.md} file .."
-          rm ${targetNAME}-HacKingWiFi-Log.md
-          clear
-          exit
-          ;;
-          n|N)
-          echo "  ${BBlue}[${BRed}!${BBlue}] Leaving {${targetNAME}-HacKingWiFi-Log.md} file and Add to it .."
-          ;;
-        esac
-      fi
       ;;
       2 )
       clear
       echo "\n\t\t${BRed}[${BBlue}2${BRed}]${BWhite} -${BRed} Reconnaissance & Vulnerability Assessment"
       ;;
       3 )
+      clear
       echo "\n\t\t${BRed}[${BBlue}3${BRed}]${BWhite} -${BRed} Gaining Access & Maintaining Access"
       ;;
       4 )
+      clear
       echo "\n\t\t${BRed}[${BBlue}4${BRed}]${BWhite} -${BRed} Covering tracks"
       ;;
       5 )
+      clear
       echo "\n\t\t${BRed}[${BBlue}5${BRed}]${BWhite} -${BRed} Analysis & Reporting"
       ;;
       x )
