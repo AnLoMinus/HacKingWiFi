@@ -254,6 +254,94 @@ ${BCyan}            └──╼ ")
         iwconfig
         read 123
         ;;
+        1.2 )
+        choose_Interface=$(echo "$(ifconfig | grep UP | awk '{print $1}' | tr ":" " ")")
+        # category function
+        category() {
+          while true; do
+            clear
+            # get all category data
+            echo "
+            ${BBlue}  ___
+            //___// ${BYellow}Chooe Network Interface
+        "
+            for i_Net in $choose_Interface ; do
+              echo " $MainMenu[!@]"
+              # display category alias name from data
+              for s_Net in $i_Net; do
+                echo " ${green}  $s_Net"
+              done
+            done
+            echo " ${green} 0 Back"
+            echo "$prompt"
+            read cmd
+            # count total number of category
+            list=`grep -n "." $choose_Interface | wc -l`
+            # process user input
+            case ${cmd} in
+              [1-9]|[1-9][0-9])
+                if [ ${cmd} -le $list ]; then
+                  while [ true ]; do
+                    clear
+                    # display all tools of selected category
+                    category=`grep '.' $choose_Interface | sed -n "${cmd} p" `
+                    category_alias=`grep '.' $choose_Interface | sed -n "${cmd} p" `
+                    # get all tools data and display
+                    echo " ${red} ___
+        //___// ${yellow}$category_alias
+        "
+                    for data in $choose_Interface ; do
+                      # display tools name from data
+                      for tool in $data; do
+                        echo " ${green} $tool" | tr '|' ' ' | tr '@' ' '
+                      done
+                    done
+                    echo " ${green} 0 Back"
+                    echo "$prompt"
+                    read tmp_cmd
+                    # count total number of tools in category
+                    list=$(echo "$(ifconfig | grep UP | awk '{print $1}' | tr ":" " ")" | wc -l)
+                    # list=`grep -n "." $tools_data | sed -n "/$category/p" | wc -l`
+                    # process user input
+                    case $tmp_cmd in
+                      [1-9]|[1-9][0-9]|[1-9][0-9][0-9]|[1-9][0-9][0-9])
+                        if [ $tmp_cmd -le $list ]; then
+                          # Show tools
+                           echo "$category $tmp_cmd"
+                        else
+                          echo "${red}$tmp_cmd: ${purple}invalid option!!"
+                          sleep 1
+                        fi
+                      ;;
+                        0|back|Back)
+                        break
+                      ;;
+                      *)
+                        echo "${red}'$tmp_cmd': ${purple}invalid option!!"
+                        sleep 1
+                      ;;
+                    esac
+                  done
+                else
+                  echo "${red}${cmd}: ${purple}invalid option!!"
+                  sleep 1
+                fi
+              ;;
+              0|back|Back)
+                break
+              ;;
+              *)
+                echo "${red}${cmd}: ${purple}invalid option!!"
+                sleep 1
+              ;;
+            esac
+          done
+        }
+        category
+
+        read 123
+        ;;
+
         x )
         clear
         exit
